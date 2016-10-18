@@ -1,9 +1,9 @@
 class Array:
+
     def __init__(self, length=0, baseIndex=0):
         # O(n)
         self._data = [None for i in range(length)]
         self._baseIndex = baseIndex
-
 
 # shallow copy: creates the copy of the Array
 # new array is different but the elements indicate to the same memory address
