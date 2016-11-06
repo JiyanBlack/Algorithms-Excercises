@@ -14,8 +14,11 @@ def qsort(array):
         compare_number += last - start - 1
         array_len = last - start
         if array_len > 1:
+            # random selected pivot:
             # pivot = start + int(random.random() * array_len)
+            # first index pivot:
             # pivot = start
+            # medium of (start, medium, last):
             medium = start + array_len // 2 - \
                 1 if array_len % 2 == 0 else (start + last - 1) // 2
             if array[start] > array[last - 1]:
@@ -34,6 +37,7 @@ def qsort(array):
                         pivot = medium
                     else:
                         pivot = start
+            # quick sort begin
             array[start], array[pivot] = array[pivot], array[start]
             divider = start + 1
             for i in range(start + 1, last):
