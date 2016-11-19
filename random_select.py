@@ -27,4 +27,4 @@ def random_selet(array, target):
         return random_selet(array[inposition + 1:], target - inposition - 1)
 
 for j in range(5):
-    print(random_selet(sample_data, 987))
+    print(random_selet(sample_data, 2))
